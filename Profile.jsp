@@ -315,7 +315,7 @@ while(rs.next()){
  
  <div class="greet">
  <p style="font-size:50px;"><b>Hello,  <%out.println(username); %></b></p>
- <p>This is your profile page. You can see all the information about you<p>
+ <p>This is your profile page. You can see all the information about you.<p>
  </div>
  <br><br><br><br><br>
  
@@ -330,6 +330,7 @@ while(rs.next()){
     <%
     if(persontype.equals("workers")){
     	output=output+"<p>Money in account:</p><input type=\"text\" value='"+account+"'>";
+	out.println(output);
     	}
     %>
     
